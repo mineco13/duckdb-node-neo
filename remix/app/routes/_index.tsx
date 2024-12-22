@@ -46,8 +46,8 @@ export default function Index() {
                 <th scope="col">{header}</th>
               ))}
             </tr>
-            {data.rows.map((row) => (
-              <tr>
+            {data.rows.map((row, index) => (
+              <tr key={index}>
                 {row.map((d) => (
                   <td scope="col">{d}</td>
                 ))}
