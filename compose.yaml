@@ -1,4 +1,9 @@
 services:
+  remix:
+    build:
+      context: remix
+    ports: [3000:3000]
+
   minio:
     image: minio/minio:latest
     ports:
