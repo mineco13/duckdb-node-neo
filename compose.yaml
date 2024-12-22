@@ -8,6 +8,8 @@ services:
       S3_PORT: "9000"
       S3_ACCESS_KEY_ID: minio
       S3_SECRET_ACCESS_KEY: minio123
+    depends_on:
+      - createbuckets
 
   minio:
     image: minio/minio:latest
